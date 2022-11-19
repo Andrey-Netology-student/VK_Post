@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Post.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">oop_hw</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Post.kt</span></div><h1>Post.kt</h1><pre class="source lang-java linenums"><span class="pc" id="L1">data class Post(</span>
+<span class="pc" id="L2">    val id: Int = 0, //Р�РґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р·Р°РїРёСЃРё. Р�Р·РјРµРЅРёР» РЅР° val</span>
+<span class="pc" id="L3">    val ownerId: Int = 0, //Р�РґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІР»Р°РґРµР»СЊС†Р° СЃС‚РµРЅС‹, РЅР° РєРѕС‚РѕСЂРѕР№ СЂР°Р·РјРµС‰РµРЅР° Р·Р°РїРёСЃСЊ</span>
+<span class="pc" id="L4">    val fromId: Int = 0, //Р�РґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р°РІС‚РѕСЂР° Р·Р°РїРёСЃРё</span>
+<span class="pc" id="L5">    val createdBy: Int = 0, //Р�РґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°, РєРѕС‚РѕСЂС‹Р№ РѕРїСѓР±Р»РёРєРѕРІР°Р» Р·Р°РїРёСЃСЊ</span>
+<span class="pc" id="L6">    val date: Long = System.currentTimeMillis() / 1000L, //Р’СЂРµРјСЏ РїСѓР±Р»РёРєР°С†РёРё Р·Р°РїРёСЃРё</span>
+<span class="pc" id="L7">    val text: String, //РўРµРєСЃС‚ Р·Р°РїРёСЃРё</span>
+<span class="pc" id="L8">    val replyOwnerId: Int = 0, //Р�РґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІР»Р°РґРµР»СЊС†Р° Р·Р°РїРёСЃРё, РІ РѕС‚РІРµС‚ РЅР° РєРѕС‚РѕСЂСѓСЋ Р±С‹Р»Р° РѕСЃС‚Р°РІР»РµРЅР° С‚РµРєСѓС‰Р°СЏ</span>
+<span class="pc" id="L9">    val replyPostId: Int = 0, //Р�РґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р·Р°РїРёСЃРё, РІ РѕС‚РІРµС‚ РЅР° РєРѕС‚РѕСЂСѓСЋ Р±С‹Р»Р° РѕСЃС‚Р°РІР»РµРЅР° С‚РµРєСѓС‰Р°СЏ</span>
+<span class="pc" id="L10">    val friendsOnly: Boolean = true, //Р•СЃР»Рё Р·Р°РїРёСЃСЊ Р±С‹Р»Р° СЃРѕР·РґР°РЅР° СЃ РѕРїС†РёРµР№ &quot;С‚РѕР»СЊРєРѕ РґР»СЏ РґСЂСѓР·РµР№&quot;</span>
+<span class="pc" id="L11">    val comments: Comments = Comments(), //Р�РЅС„РѕСЂРјР°С†РёСЏ Рѕ РєРѕРјРјРµРЅС‚Р°СЂРёСЏС… Рє Р·Р°РїРёСЃРё, РѕР±СЉРµРєС‚ СЃ РїРѕР»СЏРјРё</span>
+<span class="pc" id="L12">    val likes: Likes = Likes(), //Р�РЅС„РѕСЂРјР°С†РёСЏ Рѕ Р»Р°Р№РєР°С… Рє Р·Р°РїРёСЃРё, РѕР±СЉРµРєС‚ СЃ РїРѕР»СЏРјРё</span>
+<span class="pc" id="L13">    val reposts: Int = 0, //Р�РЅС„РѕСЂРјР°С†РёСЏ Рѕ СЂРµРїРѕСЃС‚Р°С… Р·Р°РїРёСЃРё (СЂР°СЃСЃРєР°Р·Р°С‚СЊ РґСЂСѓР·СЊСЏРј), РѕР±СЉРµРєС‚ СЃ РїРѕР»СЏРјРё</span>
+<span class="pc" id="L14">    val views: Int = 0, //Р�РЅС„РѕСЂРјР°С†РёСЏ Рѕ РїСЂРѕСЃРјРѕС‚СЂР°С… Р·Р°РїРёСЃРё. РћР±СЉРµРєС‚ СЃ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Рј РїРѕР»РµРј</span>
+<span class="pc" id="L15">    val postType: String = &quot;post&quot;, //РўРёРї Р·Р°РїРёСЃРё, РјРѕР¶РµС‚ РїСЂРёРЅРёРјР°С‚СЊ СЃР»РµРґСѓСЋС‰РёРµ Р·РЅР°С‡РµРЅРёСЏ: post, copy, reply, postpone, suggest</span>
+<span class="nc" id="L16">)</span>
+
+<span class="nc" id="L18">data class Comment(</span>
+<span class="nc" id="L19">    val id: Int = 0, //Р�РґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р·Р°РїРёСЃРё</span>
+<span class="nc" id="L20">    val fromId: Int = 0, //Р�РґРµРЅС‚РёС„РёРєР°С‚РѕСЂ Р°РІС‚РѕСЂР° Р·Р°РїРёСЃРё</span>
+<span class="nc" id="L21">    val date: Long = System.currentTimeMillis() / 1000L, //Р’СЂРµРјСЏ РїСѓР±Р»РёРєР°С†РёРё Р·Р°РїРёСЃРё</span>
+<span class="nc" id="L22">    val text: String = &quot;Comment text&quot;, //РўРµРєСЃС‚ Р·Р°РїРёСЃРё</span>
+<span class="nc" id="L23">    val replyToUser: Int = 1,</span>
+<span class="nc" id="L24">    val replyToComment: Int = 1,</span>
+<span class="nc" id="L25">)</span>
+
+<span class="nc" id="L27">data class Views(</span>
+<span class="nc" id="L28">    val count: Int</span>
+)
+
+<span class="pc" id="L31">data class Comments(</span>
+<span class="pc" id="L32">    val count: Int = 0,</span>
+<span class="pc" id="L33">    val canPost: Boolean = true,</span>
+<span class="pc" id="L34">    val groupsCanPost: Boolean = true,</span>
+<span class="pc" id="L35">    val canClose: Boolean = true,</span>
+<span class="pc" id="L36">    val canOpen: Boolean = true</span>
+<span class="nc" id="L37">)</span>
+
+<span class="pc" id="L39">data class Likes(</span>
+<span class="pc" id="L40">    val count: Int = 0,</span>
+<span class="pc" id="L41">    val userLikes: Boolean = true,</span>
+<span class="pc" id="L42">    val canLike: Boolean = true,</span>
+<span class="pc" id="L43">    val canPublish: Boolean = true</span>
+<span class="nc" id="L44">)</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

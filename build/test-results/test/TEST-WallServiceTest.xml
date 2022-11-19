@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WallServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-11-19T12:14:26" hostname="DESKTOP-DF5EQ1H" time="0.211">
+  <properties/>
+  <testcase name="testAdd" classname="WallServiceTest" time="0.208"/>
+  <testcase name="testUpdateTrue" classname="WallServiceTest" time="0.0"/>
+  <testcase name="updateFalse" classname="WallServiceTest" time="0.001"/>
+  <testcase name="addMultiple" classname="WallServiceTest" time="0.001"/>
+  <system-out><![CDATA[Post(id=1, ownerId=0, fromId=0, createdBy=0, date=1668860066, text=Message, replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+
+Post(id=2, ownerId=0, fromId=0, createdBy=0, date=1668860066, text=Hello, replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+
+Post(id=3, ownerId=0, fromId=0, createdBy=0, date=1668860066, text= , replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+
+Post(id=4, ownerId=0, fromId=0, createdBy=0, date=1668860066, text= , replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+Post(id=5, ownerId=0, fromId=0, createdBy=0, date=1668860066, text= , replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

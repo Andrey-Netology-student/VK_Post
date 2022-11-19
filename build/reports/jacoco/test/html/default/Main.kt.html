@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">oop_hw</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Main.kt</span></div><h1>Main.kt</h1><pre class="source lang-java linenums">//Р—Р°РґР°С‡Р° в„–1. РџРѕСЃС‚С‹
+
+fun main(args: Array&lt;String&gt;) {
+<span class="nc" id="L4">    val firstPost = Post(</span>
+<span class="nc" id="L5">        0,</span>
+<span class="nc" id="L6">        10,</span>
+<span class="nc" id="L7">        10,</span>
+<span class="nc" id="L8">        10,</span>
+<span class="nc" id="L9">        60,</span>
+<span class="nc" id="L10">        &quot;РџСЂРѕРІРµСЂРєР° СЂР°Р±РѕС‚С‹!&quot;,</span>
+<span class="nc" id="L11">        10,</span>
+<span class="nc" id="L12">        143,</span>
+<span class="nc" id="L13">        true,</span>
+<span class="nc" id="L14">        Comments(100, canPost = true, groupsCanPost = true, canClose = true, canOpen = true),</span>
+<span class="nc" id="L15">        Likes(300, userLikes = true, canLike = true, canPublish = true),</span>
+<span class="nc" id="L16">        1,</span>
+<span class="nc" id="L17">        500,</span>
+<span class="nc" id="L18">        &quot;post&quot;</span>
+    )
+
+<span class="nc" id="L21">    val secondPost = Post(</span>
+<span class="nc" id="L22">        1,</span>
+<span class="nc" id="L23">        11,</span>
+<span class="nc" id="L24">        11,</span>
+<span class="nc" id="L25">        11,</span>
+<span class="nc" id="L26">        11,</span>
+<span class="nc" id="L27">        &quot;РџСЂРѕРІРµСЂРєР° 2!&quot;,</span>
+<span class="nc" id="L28">        11,</span>
+<span class="nc" id="L29">        123,</span>
+<span class="nc" id="L30">        true,</span>
+<span class="nc" id="L31">        Comments(100, canPost = true, groupsCanPost = true, canClose = true, canOpen = true),</span>
+<span class="nc" id="L32">        Likes(300, userLikes = true, canLike = true, canPublish = true),</span>
+<span class="nc" id="L33">        1,</span>
+<span class="nc" id="L34">        500,</span>
+<span class="nc" id="L35">        &quot;reply&quot;</span>
+    )
+
+<span class="nc" id="L38">    WallService.add(firstPost) //Р’С‹Р·РѕРІ С„СѓРЅРєС†РёРё add Сѓ РѕР±СЉРµРєС‚Р° WallService РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ firstPost РІ РјР°СЃСЃРёРІ</span>
+<span class="nc" id="L39">    WallService.update(secondPost) //Р’С‹Р·РѕРІ С„СѓРЅРєС†РёРё update Сѓ РѕР±СЉРµРєС‚Р° WallService РґР»СЏ РѕР±РЅРѕРІР»РµРЅРёСЏ secondPost РІ РјР°СЃСЃРёРІРµ</span>
+<span class="nc" id="L40">    println(secondPost)</span>
+<span class="nc" id="L41">}</span>
+//gradle test jacocoTestReport
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

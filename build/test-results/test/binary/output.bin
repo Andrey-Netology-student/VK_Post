@@ -1,0 +1,9 @@
+ÁPost(id=1, ownerId=0, fromId=0, createdBy=0, date=1668860066, text=Message, replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+
+¿Post(id=2, ownerId=0, fromId=0, createdBy=0, date=1668860066, text=Hello, replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+
+»Post(id=3, ownerId=0, fromId=0, createdBy=0, date=1668860066, text= , replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+
+»Post(id=4, ownerId=0, fromId=0, createdBy=0, date=1668860066, text= , replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+»Post(id=5, ownerId=0, fromId=0, createdBy=0, date=1668860066, text= , replyOwnerId=0, replyPostId=0, friendsOnly=true, comments=Comments(count=0, canPost=true, groupsCanPost=true, canClose=true, canOpen=true), likes=Likes(count=0, userLikes=true, canLike=true, canPublish=true), reposts=0, views=0, postType=post)
+
